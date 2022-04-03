@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet" />
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Fiesta</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-default navbar-expand-md navbar-light" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#container"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!--<li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="menu-bar.html">Admin felület</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Contact US</a>
+                    </li>-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Több
+						</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="nevSzerint()">Rendezés név szerint</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="kezdolap()">Rendzés dátum szerint</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../letrehozas/uj_helyszin.html">Új esemény</a></li>
+                            <button class="button btn-outline-primary my-3" onclick="kijelentkezes()" id="kijelentkezes">Kijelentkezés</button>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Keresés.." aria-label="Search">
+                    <button class="ok_button" type="submit">OK</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <img src="logo2.png" alt="logo2">
+    <h2 class="rainbow-text">Adj hozzá egy új eseményt, a több menüpontban!</h2>
+    <main>
+        <div class="row" id="rendezvenyek2"></div>
+    </main>
+
+    <!--Lábléc-->
+    <footer>
+        
+        Készítették: Czégel Vanessza - Durmancs-Tóth Bendegúz - Bassa Kristóf ©
+    </footer>
+    <!--JS-->
+    <script src="menu-bar.js"></script>
+</body>
+
+</html>
